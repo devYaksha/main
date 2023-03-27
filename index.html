@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>main</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+
+<style> 
+	div {
+	width: 500px;
+	height: 500px;
+	box-shadow: 16px 14px 20px rgb(45, 45, 45);
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div::before{
+	content: "";
+	width: 150%;
+	height: 150%;
+	position: absolute;
+	animation: rotate 2s linear infinite;
+}
+div::after{
+	width: 490px;
+	height: 490px;
+	background: #101010;
+	position: absolute;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #116608;
+	font-size: larger;
+	letter-spacing: 5px;
+	box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}</style>
+
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="./abas/aboutMe.html">Sobre Mim</a></li>
+				<li><a href="https://github.com/devYaksha?tab=repositories">Projetos</a></li>
+				<li><a href="https://www.infopedia.pt/dicionarios/lingua-portuguesa/compromissado">Contato</a></li>
+                <li><a href="./abas/literary.html">Revisão da Literatura</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+
+
+	<main>
+		<div>
+		<section id="sobre-mim">
+			<h2>. . .</h2>
+			
+			<p>Olá, meu nome é Guilherme, e sou developer.</p>
+            <p>Atualmente estou cursando Sistemas de Informação, bacharelado.</p>
+			<p>Adoro trabalhar em projetos que me desafiem e me permitem aprender coisas novas.</p>
+            <cite><a href="https://www.ufop.br/noticias/institucional/ufop-entre-50-melhores-da-america-latina">| Universidade Federal de Ouro Preto - UFOP</a> </cite>
+			<p><a href="https://en.wikipedia.org/wiki/HTML"><img src="./images/Html.webp" width="32">&nbsp &nbsp<img src="./images/pythonLogo.webp" width="30">&nbsp &nbsp<img src="./images/cLogo.webp" width="35"> &nbsp &nbsp</a></p>
+
+		</section>
+	</div>
+	
+
+</body>
