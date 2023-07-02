@@ -3,81 +3,64 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>main</title>
+	<title>Guilherme S.</title>
+	<link rel = "icon" href ="images/icon.png" type = "image/x-icon">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
-
-<style> 
-	div {
-	width: 500px;
-	height: 500px;
-	box-shadow: 16px 14px 20px rgb(45, 45, 45);
-	border-radius: 10px;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-div::before{
-	content: "";
-	width: 150%;
-	height: 150%;
-	position: absolute;
-	animation: rotate 2s linear infinite;
-}
-div::after{
-	width: 490px;
-	height: 490px;
-	background: #101010;
-	position: absolute;
-	border-radius: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #116608;
-	font-size: larger;
-	letter-spacing: 5px;
-	box-shadow: inset 20px 20px 20px #0000008c;
-}
-@keyframes rotate {
-	0%{
-		transform: rotate(0deg);
-	}
-	100%{
-		transform: rotate(-360deg);
-	}
-}</style>
-
-
 <body>
+
+	<div class="area" >
+		<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+		</ul>
+</div >
+
 	<header>
-		<nav>
-			<ul>
-				<li><a href="./abas/aboutMe.html">Sobre Mim</a></li>
-				<li><a href="https://github.com/devYaksha?tab=repositories">Projetos</a></li>
-				<li><a href="./abas/me.pdf">Contato</a></li>
-                <li><a href="./abas/literary.html">Revisão da Literatura</a></li>
-				
-			</ul>
-		</nav>
+		<div class="dropdown">
+			<button class="dropbtn">Projetos</button>
+			<div class="dropdown-content">
+			  <a href="#">Repositórios Github</a>
+			  <a href="#">Em andamento...</a>
+			</div>
+		  </div> 
+
+		  <div class="dropdown">
+			<button class="dropbtn">Projetos Universitários</button>
+			<div class="dropdown-content">
+			  <a href="pdfs/Ia.pdf">Rapid Anxiety and Depression Diagnosis by AI</a>
+			  <a href="/pdfs/Iot.pdf">A review of Internet of Things (IoT)</a>
+			</div>
+		  </div> 
 	</header>
 
+		
 
-	<main>
-		<div>
-		<section id="sobre-mim">
+
+
+
+
+		<section id="about-me">
 			<h2>. . .</h2>
 			
 			<p>Olá, meu nome é Guilherme, e sou developer.</p>
-            <p>Atualmente estou cursando Sistemas de Informação, bacharelado.</p>
-			<p>Adoro trabalhar em projetos que me desafiem e me permitem aprender coisas novas.</p>
+            <p>Atualmente estou cursando Sistemas de Informação.</p>
             <cite><a href="https://www.ufop.br/noticias/institucional/ufop-entre-50-melhores-da-america-latina">| Universidade Federal de Ouro Preto - UFOP</a> </cite>
 			<p><a href="https://en.wikipedia.org/wiki/HTML"><img src="./images/Html.webp" width="32">&nbsp &nbsp<img src="./images/pythonLogo.webp" width="30">&nbsp &nbsp<img src="./images/cLogo.webp" width="35"> &nbsp &nbsp</a></p>
 
 		</section>
-	</div>
+
+		
+
 	
 
 </body>
